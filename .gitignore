@@ -1,4 +1,4 @@
 bin/
 *.class
 .settings/
-pom.properties
+target/classes/META-INF/maven/org.demo.bept/hello-spring-mvc/pom.properties
