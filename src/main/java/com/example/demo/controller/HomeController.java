@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/")
 public class HomeController {
 
-    @GetMapping("/greeting")
-    
+    @GetMapping("/greeting")  
     public String greeting(@RequestParam(name = "name") String name, Model model) {
         model.addAttribute("name", name);
         model.addAttribute("time", LocalTime.now());
@@ -22,7 +21,6 @@ public class HomeController {
     }
     
     @GetMapping("/saluti")
-    
     public String saluti() {
   
         return "saluti";
